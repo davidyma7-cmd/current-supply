@@ -1,0 +1,3 @@
+This is a VCCS （Voltage-Controlled Current Source）.
+The circuit is constructed by OP-AMP (creates negative feedback) + common drain (or source follower) amplifier.
+The logic: Due to virtual short in an OP-AMP, the Vin - will always be equal to Vin+ when created negative feedback. Although the feedback is not from Vout to Vin-, due to Common Drain Amplifier, the voltage at source is approximately short to gate, which is connected to Vout. Then, negative feedback forms. Then, the output current will be Vin+/RS. Due to circuit in series, whne you connect VDD and resistive loads at I out, then the current will be controlled by the Vin+. Then, the voltage difference across the resistive load will vary as input voltage varies, but the current stays the same.
